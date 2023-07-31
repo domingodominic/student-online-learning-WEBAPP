@@ -72,4 +72,12 @@
     width: 35ch !important;
     height: 15ch;
   }
+
+  .contact .image {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .contact .image img {
+    max-width: 100px !important;
+  }
 }
