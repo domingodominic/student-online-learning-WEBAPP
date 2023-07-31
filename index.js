@@ -1,5 +1,21 @@
+let slide;
+// if (window.matchMedia("(max-width: 800px)").matches) {
+//   slide = 2;
+// }
+
+if (window.matchMedia("(max-width: 600px)").matches) {
+  slide = 1;
+} else if (window.matchMedia("(max-width: 800px)").matches) {
+  slide = 2;
+} else {
+  slide = 3;
+}
+// } else if (window.matchMedia("(min-width: 1000px)").matches) {
+//   slide = 3;
+// }
+
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: slide,
   loop: true,
   spaceBetween: 30,
   keyboard: {
@@ -15,33 +31,12 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-const image = document.getElementById("home-img");
+//naviagtion toggle
 
-function locateImg() {
-  const img = image.getBoundingClientRect();
-  console.log(img.x);
-}
+const nav = document.querySelector(".main--navigation");
 
-window.addEventListener("scroll", locateImg);
+const checkbox = document.querySelector("#checkbox");
 
-let prevScrollPos = window.pageYOffset || document.documentElement.scrollTop;
-let scrollingUp = false;
-
-function handleScroll() {
-  const currentScrollPos =
-    window.pageYOffset || document.documentElement.scrollTop;
-
-  if (currentScrollPos > prevScrollPos) {
-    // Scrolling down
-    scrollingUp = false;
-  } else {
-    // Scrolling up
-    scrollingUp = true;
-  }
-
-  // Update the previous scroll position for the next scroll event
-  prevScrollPos = currentScrollPos;
-}
-
-// Attach the handleScroll function to the scroll event
-window.addEventListener("scroll", handleScroll);
+checkbox.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});

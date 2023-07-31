@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 1fr;
   padding-bottom: 50px;
   margin-bottom: 50px;
-  padding-top: 50px;
   .image {
     display: flex;
     justify-content: center;
@@ -11,6 +10,9 @@
     margin: 0 auto;
     img {
       width: 500px;
+    }
+    .headings {
+      margin-bottom: 0px !important;
     }
   }
 
