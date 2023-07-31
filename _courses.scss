@@ -22,6 +22,7 @@
   border-radius: 20px;
   display: flex;
   height: auto;
+  max-height: 600px;
   justify-content: center;
   align-items: center;
 
@@ -41,9 +42,8 @@
       color: black;
     }
     .enroll-btn {
-      position: absolute;
+      position: relative;
       bottom: 0;
-      left: 37%;
       border: none;
       border-radius: 20px;
       padding: 10px 20px;
@@ -57,11 +57,10 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  padding: 30px;
   border-radius: 100%;
   /* text-align: center; */
   font-size: 10px !important;
-  box-shadow: 7px 7px 14px #a1a1a1, -7px -7px 14px #ffffff;
+
   color: green;
 }
 

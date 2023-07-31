@@ -11996,7 +11996,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 header .login-btn {
@@ -12015,8 +12015,8 @@ header .login-btn {
 .column--one {
   overflow: hidden;
   padding-top: 60px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: grid;
   grid-auto-rows: max-content;
   grid-template-columns: 1fr 1fr;
@@ -12027,7 +12027,7 @@ header .login-btn {
   text-align: center;
 }
 .column--one .title--column .title {
-  font-size: 100px;
+  font-size: 70px;
   font-weight: bold;
 }
 .column--one .title--column .contact-us-btn {
@@ -12041,22 +12041,24 @@ header .login-btn {
   color: green;
 }
 .column--one .image {
-  justify-self: center;
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dashboard--list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
-  gap: 30px;
+  margin-top: 80px;
+  gap: 20px;
 }
 .dashboard--list li {
   display: flex;
-  padding: 20px 80px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
   background-color: rgb(213, 213, 213);
-  gap: 20px;
+  gap: 30px;
 }
 .dashboard--list li i {
   font-size: 40px;
@@ -12077,19 +12079,23 @@ header .login-btn {
 .about-us .aboutus-image {
   justify-self: center;
 }
+.about-us .aboutus-image img {
+  width: 300px;
+  height: 300px;
+}
 .about-us .content {
   justify-self: center;
   text-align: center;
   line-height: 2rem;
 }
 .about-us .content h4, .about-us .content .h4 {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
 }
 .about-us .content button {
   border: none;
   background-color: #17ab00;
-  padding: 10px 30px;
+  padding: 3px 10px;
 }
 .about-us .content button a {
   text-decoration: none;
@@ -12124,6 +12130,7 @@ header .login-btn {
   border-radius: 20px;
   display: flex;
   height: auto;
+  max-height: 600px;
   justify-content: center;
   align-items: center;
 }
@@ -12145,9 +12152,8 @@ header .login-btn {
   color: black;
 }
 .swiper-slide .slide .enroll-btn {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  left: 37%;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -12159,11 +12165,9 @@ header .login-btn {
 
 .swiper-button-next,
 .swiper-button-prev {
-  padding: 30px;
   border-radius: 100%;
   /* text-align: center; */
   font-size: 10px !important;
-  box-shadow: 7px 7px 14px #a1a1a1, -7px -7px 14px #ffffff;
   color: green;
 }
 
@@ -12236,8 +12240,8 @@ header .login-btn {
 }
 .review-wrapper .review-slide .slide img {
   margin: 0 auto;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 200%;
 }
 .review-wrapper .review-slide .slide img::before {
@@ -12257,11 +12261,19 @@ header .login-btn {
   grid-template-columns: 1fr 1fr;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 .contact .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
+.contact .image img {
+  width: 500px;
+}
 .contact form {
+  padding: 20px;
   margin: 0 auto;
 }
 .contact div label {
@@ -12275,6 +12287,7 @@ header .login-btn {
 .contact input {
   padding: 10px 20px;
   min-width: 500px;
+  border: 1px solid green;
 }
 
 input[type=submit] {
@@ -12282,6 +12295,11 @@ input[type=submit] {
   background-color: #17ab00;
   border: none;
   color: white;
+}
+
+form textarea {
+  border: 1px solid green;
+  padding: 11px;
 }
 
 footer {
@@ -12364,8 +12382,21 @@ footer p {
     display: flex !important;
     justify-content: center !important;
   }
+  .about-us .content h4, .about-us .content .h4 {
+    font-size: 30px !important;
+  }
+  .about-us .aboutus-image img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .about-us .content button a {
+    font-size: 10px !important;
+  }
+  .about-us .content button {
+    padding: 3px 10px !important;
+  }
   .contact .image img {
-    max-width: 100px !important;
+    max-width: 500px !important;
   }
 }
 * {

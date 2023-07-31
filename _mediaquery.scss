@@ -77,7 +77,21 @@
     display: flex !important;
     justify-content: center !important;
   }
+
+  .about-us .content h4 {
+    font-size: 30px !important;
+  }
+  .about-us .aboutus-image img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .about-us .content button a {
+    font-size: 10px !important;
+  }
+  .about-us .content button {
+    padding: 3px 10px !important;
+  }
   .contact .image img {
-    max-width: 100px !important;
+    max-width: 500px !important;
   }
 }

@@ -3,11 +3,19 @@
   grid-template-columns: 1fr 1fr;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  padding-top: 50px;
   .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+    img {
+      width: 500px;
+    }
   }
 
   form {
+    padding: 20px;
     margin: 0 auto;
   }
   div label {
@@ -21,6 +29,7 @@
   input {
     padding: 10px 20px;
     min-width: 500px;
+    border: 1px solid green;
   }
 }
 input[type="submit"] {
@@ -28,4 +37,9 @@ input[type="submit"] {
   background-color: #17ab00;
   border: none;
   color: white;
+}
+
+form textarea {
+  border: 1px solid green;
+  padding: 11px;
 }
