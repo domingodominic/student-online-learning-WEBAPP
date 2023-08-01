@@ -136,3 +136,103 @@
     right: 80px;
   }
 }
+
+//for mobile phone
+
+@media (max-width: 450px) {
+  header {
+    padding-left: 20px;
+
+    .login-btn {
+      padding: 5px 10px;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+  }
+  .column--one {
+    padding: 0;
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    .title--column {
+      .title {
+        letter-spacing: 1px;
+        font-size: 40px;
+      }
+    }
+    .image {
+      img {
+        border-radius: 100%;
+      }
+    }
+  }
+  .column--one .title--column .contact-us-btn {
+    padding: 10px;
+    background-color: #17ab00;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .dashboard--list {
+    gap: 10px;
+    padding: 0;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+    li {
+      gap: 10px;
+      padding: 5px 20px;
+      i {
+        font-size: 25px;
+      }
+      .number {
+        font-size: 15px;
+      }
+      .title {
+        font-size: 10px;
+      }
+    }
+  }
+  .about-us {
+    grid-template-columns: 1fr;
+    padding: 20px 100px;
+
+    h4 {
+      color: #17ab00;
+    }
+    button {
+      padding: 3px 20px;
+      border-radius: 10px;
+    }
+  }
+  .courses {
+    height: 80vh;
+  }
+  .headings {
+    padding-top: 20px;
+    margin: 0;
+  }
+  .reviews {
+    background-color: rgb(223, 223, 223);
+  }
+  .review-slide {
+    background-color: white;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    input {
+      min-width: 300px;
+    }
+    img {
+      width: 300px !important;
+    }
+    textarea {
+      width: 300px;
+    }
+  }
+}

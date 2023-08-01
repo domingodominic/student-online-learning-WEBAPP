@@ -40,3 +40,9 @@ const checkbox = document.querySelector("#checkbox");
 checkbox.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
+
+function loaders() {
+  let loader = document.querySelector(".loader");
+  loader.style.display = "none";
+}
+setInterval(loaders, 3000);

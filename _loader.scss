@@ -1,0 +1,36 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  h5 {
+    position: absolute;
+    margin-top: 150px;
+    font-weight: bold;
+
+    animation: textLoad 2.5s infinite;
+  }
+}
+@keyframes textLoad {
+  from {
+    opacity: 0;
+  }
+}
+
+.spinner {
+  width: 6px;
+  height: 6px;
+  animation: spinner-xp626r 1.1s infinite;
+  border-radius: 50%;
+  box-shadow: 24px 0 0 6px #17ab00, -24px 0 0 6px #17ab00;
+}
+
+@keyframes spinner-xp626r {
+  to {
+    transform: rotate(360deg);
+  }
+}
