@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta property="og:name" content="Online Learning Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link Swiper's CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    /> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -56,7 +53,11 @@
     <!-- the main section of the home page -->
     <section class="home--page" id="home--page">
       <div class="column--one">
-        <div class="title--column">
+        <div
+          class="title--column"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <h1 class="title">Free</h1>
           <h1 class="title">Online</h1>
           <h1 class="title">Education</h1>
@@ -106,7 +107,7 @@
     </section>
 
     <!-- about us section -->
-    <section class="about-us">
+    <section class="about-us" data-aos="flip-left" data-aos-duration="1500">
       <div class="aboutus-image">
         <img src="image/about-us.gif" alt="About us gif" />
       </div>
@@ -123,11 +124,11 @@
 
     <!-- courses section -->
     <section class="courses">
-      <div class="headings">
+      <div class="headings" data-aos="flip-up" data-aos-duration="1500">
         Available <span style="font-weight: bold; color: #17ab00">Courses</span>
       </div>
       <!-- Swiper -->
-      <div class="swiper mySwiper coursesSwiper">
+      <div class="swiper mySwiper coursesSwiper" data-aos="fade-up">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide">
@@ -199,12 +200,16 @@
     </section>
 
     <section class="reviews">
-      <div class="headings">
+      <div class="headings" data-aos="fade-up" data-aos-duration="1500">
         Student <span style="font-weight: bold; color: #17ab00">Reviews</span>
       </div>
 
       <!-- Swiper -->
-      <div class="swiper mySwiper reviewSwipper">
+      <div
+        class="swiper mySwiper reviewSwipper"
+        data-aos="flip-left"
+        data-aos-duration="1500"
+      >
         <div class="swiper-wrapper review-wrapper">
           <div class="swiper-slide review-slide">
             <div class="slide">
@@ -339,15 +344,20 @@
     </section>
 
     <section class="contacts" id="contacts">
-      <div class="headings">
+      <div class="headings" data-aos="fade-up" data-aos-duration="1500">
         Contact <span style="font-weight: bold; color: #17ab00">Us</span>
       </div>
       <div class="contact">
-        <div class="image">
+        <div class="image" data-aos="fade-right">
           <img src="image/contact-svg.svg" alt="contact svg" />
         </div>
 
-        <form action="" method="post">
+        <form
+          action=""
+          method="post"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div>
             <label for="name">Your name</label>
             <input
@@ -401,6 +411,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
 
     <!-- Initialize Swiper -->

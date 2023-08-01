@@ -1,7 +1,5 @@
+AOS.init();
 let slide;
-// if (window.matchMedia("(max-width: 800px)").matches) {
-//   slide = 2;
-// }
 
 if (window.matchMedia("(max-width: 600px)").matches) {
   slide = 1;
