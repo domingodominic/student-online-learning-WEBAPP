@@ -1,0 +1,23 @@
+.login--container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  label {
+    display: block;
+  }
+  input {
+    width: 100%;
+  }
+  .login--form {
+    background-color: white;
+    padding: 20px 50px;
+  }
+  .login--btn {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    background-color: green;
+  }
+}

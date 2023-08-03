@@ -1,3 +1,10 @@
+<?php
+session_start();
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,6 +35,7 @@
 
     <!-- header of the page  -->
     <header>
+
       <div class="website--name">Genius<span class="span"> IT</span></div>
       <nav class="main--navigation">
         <ul class="navigation">
@@ -47,9 +55,19 @@
           <div id="bar3" class="bars"></div>
         </label>
       </div>
-      <button class="login-btn">Log In</button>
+      <?php
+    if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+        // User is logged in, hide the sign-up button
+        // You can replace this button with a logout button if you have a logout feature
+    } else {
+        // User is not logged in, show the sign-up button
+        echo ' <button class="login-btn"><a href="signup.php">Sign Up</a></button>';
+    }
+    ?>
     </header>
 
+
+ 
     <!-- the main section of the home page -->
     <section class="home--page" id="home--page">
       <div class="column--one">

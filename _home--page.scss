@@ -31,8 +31,13 @@ header {
     padding: 10px 20px;
     border: none;
     background-color: #17ab00;
-    color: white;
-    font-weight: bold;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      font-weight: bold;
+    }
   }
 }
 

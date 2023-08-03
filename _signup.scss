@@ -1,0 +1,41 @@
+.form--container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(199, 199, 199);
+
+  .form {
+    background-color: white;
+    padding: 20px 50px;
+    animation: bringdown 1s;
+    animation-fill-mode: forwards;
+
+    h1 {
+      text-align: center;
+    }
+  }
+  input {
+    border: 1px solid gray;
+    width: 100%;
+  }
+  label {
+    display: block;
+  }
+  .gender {
+    display: inline;
+  }
+  input[type="submit"] {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  input:focus:invalid {
+    border: 1px solid red;
+  }
+}
+
+@keyframes bringdown {
+  from {
+    transform: translateY(-100%);
+  }
+}
